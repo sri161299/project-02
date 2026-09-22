@@ -15,6 +15,11 @@
   </head>
   <body class="bg-[#03040d] text-[#f8f8fc] selection:bg-[#5545ff]/40 selection:text-white antialiased overflow-x-hidden">
     <div id="root"></div>
+    <script>
+      if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        location.replace('./dist/');
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
